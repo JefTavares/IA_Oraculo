@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Streamlit: Oraculo",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "streamlit",
+            "args": [
+                "run",
+                "04_aula.py"
+            ],
+            // O Streamlit requer interação com o terminal para exibir a interface web.
+            // Não é possível executar diretamente no painel Output ou Debug Console.
+            // O valor "console" pode ser "integratedTerminal" ou "externalTerminal" apenas.
+            "console": "integratedTerminal"
+        }
+    ]
+}
